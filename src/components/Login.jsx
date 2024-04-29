@@ -2,11 +2,13 @@ import React from "react";
 import { useRef, useState } from "react";
 import Header from "./Header";
 import {checkValidData} from "../utils/validate";
+import {createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth"
+import {auth} from "../utils/firebase"
 
 const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
-  const [errorMessage, serErrorMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const email = useRef(null);
   const password = useRef(null);
@@ -17,10 +19,35 @@ const Login = () => {
 
   const handleButtonClick = () => {
     const message =  checkValidData(email.current.value, password.current.value);
-    serErrorMessage(message);
+    setErrorMessage(message);
 
-    if(message === null){
-      
+    if(!isSignInForm){
+      // SignUp Login
+      createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+        .then((userCredential) => { 
+          const user = userCredential.user;
+          console.log(user);
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(errorCode + "-" + errorMessage);
+        }
+      );
+    }else{
+      // SignIn Login
+      signInWithEmailAndPassword(auth, email.current.value, password.current.value)
+        .then((userCredential) => { 
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(errorCode + "-" + errorMessage);
+        }
+      );
     }
   };
 
@@ -30,7 +57,7 @@ const Login = () => {
       <div className="absolute">
         <img src="https://assets.nflxext.com/ffe/siteui/vlv3/058eee37-6c24-403a-95bd-7d85d3260ae1/e10ba8a6-b96a-4308-bee4-76fab1ebd6ca/IN-en-20240422-POP_SIGNUP_TWO_WEEKS-perspective_WEB_db9348f2-4d68-4934-b495-6d9d1be5917e_large.jpg" alt="Netflix BG" />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className="absolute p-12 w-3/12 h-[450px] mt-36 mx-auto text-white bg-black bg-opacity-80 right-0 rounded-lg left-0 flex flex-col justify-center items-center ">
+      <form onSubmit={(e) => e.preventDefault()} className="absolute p-12 w-3/12 h-[500px] mt-36 mx-auto text-white bg-black bg-opacity-80 right-0 rounded-lg left-0 flex flex-col justify-center items-center ">
         <h1 className="font-bold text-3xl py-4 mr-auto">{isSignInForm ? "Sign In" : "Sign Up"}</h1>
         {!isSignInForm && <input type="text" placeholder="Full Name" className="px-3 py-2 m-2 w-full bg-gray-600 " required />}
         <input type="text" ref={email} placeholder="Email" className="px-3 py-2 my-3 w-full bg-gray-600 " required />
