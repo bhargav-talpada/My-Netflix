@@ -16,6 +16,7 @@
 - Create SignUp User Account
 - Implement SignIn User API
 - Create Redux Store with UserSlice and Provide store on root level of page
+- Sign Out
 
 # Features ⭐
 - Login/SignUp page
