@@ -1,0 +1,15 @@
+==> Firebase Authentication :-
+-> type blow command : 
+    -> For Install cmd - npm i firebase
+    -> To deploy your app to write below command
+    -> cmd - firebase login
+    -> connect with your google account.
+    -> cmd - firebase init
+    -> select Hosting
+    -> then select Use an existing project
+    -> then select project name
+    -> then select options like below this
+        -> What do you want to use as your public directory? build
+        -> Configure as a single-page app (rewrite all urls to /index.html)? No
+        -> Set up automatic builds and deploys with GitHub? No
+    -> cmd - firebase deploy

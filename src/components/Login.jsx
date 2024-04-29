@@ -18,6 +18,10 @@ const Login = () => {
   const handleButtonClick = () => {
     const message =  checkValidData(email.current.value, password.current.value);
     serErrorMessage(message);
+
+    if(message === null){
+      
+    }
   };
 
   return (
