@@ -2,6 +2,7 @@
 
 - This NetflixGPT project is a final project of Namaste React Series and this project made using react.
 
+# Work 
 - Create React App
 - Configure Tailwind Css
 - Header
@@ -13,8 +14,10 @@
 - Firebase Setup
 - Delpoing our app to production
 - Create SignUp User Account
+- Implement SignIn User API
+- Create Redux Store with UserSlice and Provide store on root level of page
 
-# Features
+# Features ⭐
 - Login/SignUp page
     - SignIn / SignUp form
     - redirect to browse page
