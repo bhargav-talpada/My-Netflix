@@ -13,3 +13,7 @@
         -> Configure as a single-page app (rewrite all urls to /index.html)? No
         -> Set up automatic builds and deploys with GitHub? No
     -> cmd - firebase deploy
+    -> For signUp user in our app to use createUserWithEmailAndPassword() of firebase.
+    -> For signIn user in our app to use signInWithEmailAndPassword() of firebase.
+    -> For Manage user im our app to use onAuthStateChanged() of firebase.
+    -> above three functions get into the firebase documentation.
