@@ -22,7 +22,10 @@
 - Bug Fix : if the user is not logged in Redirect browse to login and if user is login redirect login to browse
 - Unsubscribed tobe onAuthStateChanged() callback
 - Add hard coded values in constants file
-- Fetch movies form TMDB
+- Registerd in TMDB API & create an app & get access token
+- Get data from TMDB now playing movies list API
+- Fetch data from api and updathe the store
+- Create custom hooks for fetch now playing movies data
 
 # Features ⭐
 - Login/SignUp page
