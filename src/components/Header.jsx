@@ -19,17 +19,22 @@ const Header = () => {
   }
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
         if (user) {
-            const {uid, email, displayName, photoURL} = user;
-            dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
-            navigate("/browse");
+          const {uid, email, displayName, photoURL} = user;
+          dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
+          navigate("/browse");
         } else {
-            dispatch(removeUser());
-            navigate("/");
+          dispatch(removeUser());
+          navigate("/");
         }
-      })
-},[]);
+      }
+    );
+
+    // unsubscribe when component unmount
+    return () => unsubscribe();
+
+  },[]);
 
   return (
     <div className="absolute flex justify-between w-full px-8 py-2 bg-gradient-to-b from-black z-10">
