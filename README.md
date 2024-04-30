@@ -21,6 +21,7 @@
 - Bug Fix : signUp user displayname and picture
 - Bug Fix : if the user is not logged in Redirect browse to login and if user is login redirect login to browse
 - Unsubscribed tobe onAuthStateChanged() callback
+- Write logo url & photo url in constants.jsx file
 - Fetch movies form TMDB
 
 # Features ⭐
