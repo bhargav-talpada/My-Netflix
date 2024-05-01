@@ -2,7 +2,22 @@
 
 - This NetflixGPT project is a final project of Namaste React Series and this project made using react.
 
-# Work 
+# Features ⭐
+- Login/SignUp page
+    - SignIn / SignUp form
+    - redirect to browse page
+- Browse (after authentication)
+    - Header
+    - Main Movie
+        - Triler in background
+        - Title & discription
+        - Movie Suggestions
+            - Movie List * N
+- NetflixGPT
+    - Search Bar
+    - Movie Suggetions
+
+# Work 🧑‍💻💻
 - Create React App
 - Configure Tailwind Css
 - Header
@@ -26,18 +41,3 @@
 - Get data from TMDB now playing movies list API
 - Fetch data from api and updathe the store
 - Create custom hooks for fetch now playing movies data
-
-# Features ⭐
-- Login/SignUp page
-    - SignIn / SignUp form
-    - redirect to browse page
-- Browse (after authentication)
-    - Header
-    - Main Movie
-        - Triler in background
-        - Title & discription
-        - Movie Suggestions
-            - Movie List * N
-- NetflixGPT
-    - Search Bar
-    - Movie Suggetions
