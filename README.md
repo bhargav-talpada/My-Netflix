@@ -43,3 +43,4 @@
 - Create custom hooks for fetch now playing movies data
 - Create a video title page and get video title from movies api
 - Building a Video background & fetch the bg video/trailer form videos api  
+- Creating custom hooks for fetch background movie trailer video
