@@ -54,4 +54,12 @@
 - Buils the movie card
 - Found TMDB img cdn url and add into our app
 - Made the browse page awasome using tailwind css
-- create popualer movie custom hook
+- create populer movie custom hook
+- Fetch popular movies from TMDB api and update the store
+- Get the popular movies data
+- create top rated movie custom hook
+- Fetch top rated movies from TMDB api and update the store
+- Get the top rated movies data
+- create Up Coming movie custom hook
+- Fetch Up Coming movies from TMDB api and update the store
+- Get the Up Coming movies data
