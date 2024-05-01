@@ -49,3 +49,4 @@
 - Update store with trailer data
 - Creating custom hooks for fetch background movie trailer video 
 - Embedded the youtube video and make it autoplay and mute
+- Build Secoundary Container
