@@ -41,6 +41,11 @@
 - Get data from TMDB now playing movies list API
 - Fetch data from api and updathe the store
 - Create custom hooks for fetch now playing movies data
+- create movie slice
+- Update store with movie data
+- Planning for MainContainer & SecoundaryContainer
 - Create a video title page and get video title from movies api
 - Building a Video background & fetch the bg video/trailer form videos api  
-- Creating custom hooks for fetch background movie trailer video
+- Update store with trailer data
+- Creating custom hooks for fetch background movie trailer video 
+- Embedded the youtube video and make it autoplay and mute
