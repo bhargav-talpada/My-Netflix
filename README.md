@@ -50,3 +50,8 @@
 - Creating custom hooks for fetch background movie trailer video 
 - Embedded the youtube video and make it autoplay and mute
 - Build Secoundary Container
+- Build the movie list
+- Buils the movie card
+- Found TMDB img cdn url and add into our app
+- Made the browse page awasome using tailwind css
+- create popualer movie custom hook
