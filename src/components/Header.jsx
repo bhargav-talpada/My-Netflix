@@ -3,7 +3,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { addUser, removeUser } from "../utils/userSlice";
+import { addUser, removeUser } from "../redux/userSlice";
 import { NETFLIX_LOGO } from "../utils/constants";
 
 const Header = () => {

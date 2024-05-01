@@ -17,3 +17,8 @@
     -> For signIn user in our app to use signInWithEmailAndPassword() of firebase.
     -> For Manage user im our app to use onAuthStateChanged() of firebase.
     -> above three functions get into the firebase documentation.
+
+-> We are get movies api from the TMDB site.
+-> Create account in TMDB and get the API key.
+-> TMDB -> edit profile -> API -> developer.themoviedb.org -> API reference -> Movie List
+-> Here above to get movies api follow the path.

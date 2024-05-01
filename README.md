@@ -42,4 +42,4 @@
 - Fetch data from api and updathe the store
 - Create custom hooks for fetch now playing movies data
 - Create a video title page and get video title from movies api
-- Create a vidoe background 
+- Building a Video background & fetch the bg video/trailer form videos api  
