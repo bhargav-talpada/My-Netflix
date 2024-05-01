@@ -11,9 +11,8 @@ function SecoundaryContainer() {
         <div className="-mt-52 pl-7 relative z-20">
           <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
           <MovieList title={"Popular Movies"} movies={movies.popularMovies} />
-          <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Upcoming Movies"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Horrer"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Top Rated"} movies={movies.topRatedMovies} />
+          <MovieList title={"Upcoming Movies"} movies={movies.upcomingMovies} />
         </div>
       </div>
     )
