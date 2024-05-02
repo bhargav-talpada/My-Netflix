@@ -67,3 +67,7 @@
 - Fetch UpComing movies from TMDB api and update the store
 - Get the UpComing movies data
 - GPT Search feature
+- Create toggle GPT Page
+- Building GPT Search Bar 
+- Build a multiple language feature
+- Create configSlice and add supported language and update the store 

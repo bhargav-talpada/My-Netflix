@@ -2,7 +2,6 @@ import MovieCard from "./MovieCard"
 
 function MovieList({title, movies}) {
 
-    console.log(movies);
 
   return (
     <div className="px-5 bg-transparent">

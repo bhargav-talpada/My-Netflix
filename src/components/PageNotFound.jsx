@@ -2,8 +2,7 @@ import {useRouteError} from 'react-router-dom';
 
 function PageNotFound() {
 
-    const err = useRouteError();
-    console.log(err);
+    
 
   return (
     <div className='m-4 p-4'>
