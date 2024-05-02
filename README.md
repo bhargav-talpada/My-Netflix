@@ -11,10 +11,13 @@
     - Main Movie
         - Triler in background
         - Title & discription
-        - Movie Suggestions
-            - Movie List * N
+        - Movie List
+            - Now Playing Movies
+            - Top Rated Movies
+            - Popular Movies
+            - Upcoming Movies
 - NetflixGPT
-    - Search Bar
+    - GPT Search Bar
     - Movie Suggetions
 
 # Work 🧑‍💻💻
@@ -63,3 +66,4 @@
 - create UpComing movie custom hook
 - Fetch UpComing movies from TMDB api and update the store
 - Get the UpComing movies data
+- GPT Search feature
