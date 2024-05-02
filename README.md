@@ -60,6 +60,6 @@
 - create top rated movie custom hook
 - Fetch top rated movies from TMDB api and update the store
 - Get the top rated movies data
-- create Up Coming movie custom hook
-- Fetch Up Coming movies from TMDB api and update the store
-- Get the Up Coming movies data
+- create UpComing movie custom hook
+- Fetch UpComing movies from TMDB api and update the store
+- Get the UpComing movies data
