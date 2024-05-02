@@ -49,25 +49,34 @@ const Header = () => {
 
   return (
     <div className="absolute flex justify-between w-full px-8 py-2 bg-gradient-to-b from-black z-10">
-        <img className="w-40" src={NETFLIX_LOGO} alt="Netflix logo"/>
-        {user && 
-          <div className=" flex items-center justify-center p-2">
-            { showGptSearch &&
-              <select className="p-2 bg-gray-800 text-white m-2" onChange={handleLanguageChange}>
-                {
-                  SUPPORTED_LANG.map(lang => 
-                    <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
-                  )
-                }
-              </select>
-            }
-            <button onClick={handleGPTSearchClick} className="py-2 px-5 my-2 mx-5 bg-blue-500 text-white rounded-lg">
-              {showGptSearch ? "Home Page" : "GPT Search"}
-            </button>
-            <img className="w-9 h-9" src={user?.photoURL} alt="usericon" />
-            <button onClick={handleSignOut} className="font-bold text-white ml-3">Sign Out</button>
-          </div>
+      <img className="w-40" src={NETFLIX_LOGO} alt="Netflix logo"/>
+      {!user && 
+        <select className=" px-5 bg-gray-800 text-white m-2" onChange={handleLanguageChange}>
+          {
+            SUPPORTED_LANG.map(lang => 
+              <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+            )
           }
+        </select>
+      }
+      {user && 
+        <div className=" flex items-center justify-center p-2">
+          { showGptSearch &&
+            <select className="p-2 px-5 bg-gray-800 text-white m-2" onChange={handleLanguageChange}>
+              {
+                SUPPORTED_LANG.map(lang => 
+                  <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+                )
+              }
+            </select>
+          }
+          <button onClick={handleGPTSearchClick} className="py-2 px-5 my-2 mx-5 bg-blue-500 text-white rounded-lg">
+            {showGptSearch ? "Home Page" : "GPT Search"}
+          </button>
+          <img className="w-9 h-9" src={user?.photoURL} alt="usericon" />
+          <button onClick={handleSignOut} className="font-bold text-white ml-3">Sign Out</button>
+        </div>
+      }
     </div>
   )
 }

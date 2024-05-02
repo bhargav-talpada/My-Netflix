@@ -17,5 +17,4 @@ export const API_OPTIONS = {
 export const SUPPORTED_LANG = [
   {identifier: "en", name: "English"},
   {identifier: "hindi", name: "Hindi"},
-  {identifier: "spanish", name: "Spanish"},
 ];
