@@ -71,3 +71,7 @@
 - Building GPT Search Bar 
 - Build a multiple language feature
 - Create configSlice and add supported language and update the store 
+- Added .env file
+- Add gpt key & TMDB key on the .env file
+- Add. env on gitignore
+- Resposive Design (Mobile UI)
