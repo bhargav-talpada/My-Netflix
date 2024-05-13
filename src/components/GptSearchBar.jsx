@@ -12,13 +12,13 @@ function GptSearchBar() {
 
     // make an api call to get gpt api and get movie
 
-    const gptQuery = "Act as a Movie Recommendation system and suggest movies for the query : " + searchText.current.value + "Only give me name of 5 movies, comma saperated like the example result ahead. Example Result : The Freelancer, Puspa, Bahubali, KGF, Salaar";
+    // const gptQuery = "Act as a Movie Recommendation system and suggest movies for the query : " + searchText.current.value + "Only give me name of 5 movies, comma saperated like the example result ahead. Example Result : The Freelancer, Puspa, Bahubali, KGF, Salaar";
 
-    const gptResults = await openai.chat.completions.create({
-      messages: [{ role: 'user', content: gptQuery }],
-      model: 'gpt-3.5-turbo',
-    });
-    console.log(gptResults.choices?.[0]?.message?.content);
+    // const gptResults = await openai.chat.completions.create({
+    //   messages: [{ role: 'user', content: gptQuery }],
+    //   model: 'gpt-3.5-turbo',
+    // });
+    // console.log(gptResults.choices?.[0]?.message?.content);
   }
 
   return (

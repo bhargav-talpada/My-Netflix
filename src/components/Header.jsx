@@ -70,9 +70,9 @@ const Header = () => {
               }
             </select>
           }
-          <button onClick={handleGPTSearchClick} className="py-2 px-5 my-2 mx-5 bg-blue-500 text-white rounded-lg">
+          {/* <button onClick={handleGPTSearchClick} className="py-2 px-5 my-2 mx-5 bg-blue-500 text-white rounded-lg">
             {showGptSearch ? "Home Page" : "GPT Search"}
-          </button>
+          </button> */}
           <img className="hidden sm:inline-block w-9 h-9" src={user?.photoURL} alt="usericon" />
           <button onClick={handleSignOut} className="font-bold text-white ml-3">Sign Out</button>
         </div>
