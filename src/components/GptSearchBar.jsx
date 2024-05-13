@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import lang from "../utils/languageConstants";
 import { useRef } from "react";
-import openai from "../utils/openai";
 
 function GptSearchBar() {
 
@@ -18,7 +17,6 @@ function GptSearchBar() {
     //   messages: [{ role: 'user', content: gptQuery }],
     //   model: 'gpt-3.5-turbo',
     // });
-    // console.log(gptResults.choices?.[0]?.message?.content);
   }
 
   return (
