@@ -7,6 +7,7 @@ import { addUser, removeUser } from "../redux/userSlice";
 import { NETFLIX_LOGO, SUPPORTED_LANG } from "../utils/constants";
 import { toggleGPTSearchView } from "../redux/gptSlice";
 import { changeLanguage } from "../redux/configSlice";
+import { LuLogOut } from "react-icons/lu";
 
 const Header = () => {
 
@@ -74,7 +75,7 @@ const Header = () => {
             {showGptSearch ? "Home Page" : "GPT Search"}
           </button> */}
           <img className="hidden sm:inline-block w-9 h-9" src={user?.photoURL} alt="usericon" />
-          <button onClick={handleSignOut} className="font-bold text-white ml-3">Sign Out</button>
+          <button onClick={handleSignOut} className="font-bold text-white ml-3 text-2xl"><LuLogOut /></button>
         </div>
       }
     </div>
