@@ -65,29 +65,36 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden">
         <Header />
         <div className="">
           <img src={LOGIN_BG} className="h-screen md:h-full bg-cover w-screen" alt="Netflix BG" />
           <hr className="border-[#232323] border-4" />
-          <div className=" w-screen h-[550px] bg-black flex justify-center items-center">
+          <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
             <div className="flex flex-col gap-5">
               <h1 className="text-white text-5xl font-black">Enjoy on your TV</h1>
               <p className="w-[550px] text-white text-2xl font-normal">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
             <div className="flex flex-col justify-center items-center overflow-hidden">
-              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" className="h-[450px]" />
-              <div className="absolute w-[406px] mb-[15px] mr-[5px] ">
+              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" className="h-[430px]" alt="TV img" />
+              <div className="absolute w-[416px] mb-[15px] mr-[5px] ">
                 <video className="inline-block" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoPlay loop />
               </div>
             </div>
           </div>
           <hr className="border-[#232323] border-4" />
-          <div className=" w-screen h-[550px] bg-black flex justify-center items-center">
-            <div className="flex flex-col justify-center items-center overflow-hidden">
-              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" className="h-[450px]" />
-              <div className="absolute border-2 border-[#232323] w-[400px] h-36">
-                
+          <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
+            <div className="flex flex-col justify-end items-center overflow-hidden">
+              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" className="h-[450px]" alt="mobile img" />
+              <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[320px] h-28 bg-black mb-7 p-3">
+                <div className="flex gap-4 items-center">
+                  <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" className="h-[87px]" alt="Stranger Things" />
+                  <div>
+                    <h1 className="text-xl text-white font-medium">Stranger Things</h1>
+                    <h1 className="text-[#0071eb] text-xl font-normal">Downloading...</h1>
+                  </div>
+                </div>
+                <img className="w-12" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="downloading gif" />
               </div>
             </div>
             <div className="flex flex-col gap-5">
