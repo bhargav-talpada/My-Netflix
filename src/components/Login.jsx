@@ -6,8 +6,9 @@ import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfil
 import {auth} from "../utils/firebase"
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../redux/userSlice";
-import { CHILDREN_IMG_URL, DESKTOP_IMG_URL, DESKTOP_ING_URL, DESKTOP_VIDEO_URL, DOWNLOADING_GIF_URL, LOGIN_BG, MOBILE_IMG_URL, STRANGER_THINGS_POSTER_URL, TV_IMG_URL, TV_VIDEO_URL, USER_AVATAR } from "../utils/constants";
+import { CHILDREN_IMG_URL, DESKTOP_IMG_URL, DESKTOP_VIDEO_URL, DOWNLOADING_GIF_URL, LOGIN_BG, MOBILE_IMG_URL, STRANGER_THINGS_POSTER_URL, TV_IMG_URL, TV_VIDEO_URL, USER_AVATAR } from "../utils/constants";
 import lang from "../utils/languageConstants";
+import { FaChevronRight } from "react-icons/fa6";
 
 const Login = () => {
 
@@ -123,6 +124,43 @@ const Login = () => {
             <div className="flex flex-col gap-5">
               <h1 className="text-white text-5xl font-black w-[480px]">Create profiles for kids</h1>
               <p className="w-[530px] text-white text-2xl font-normal">Send children on adventures with their favourite characters in a space made just for them—free with your membership. </p>
+            </div>
+          </div>
+          <hr className="border-[#232323] border-4" />
+          <div className=" w-screen h-[1000px] bg-black flex flex-col justify-center items-center gap-7">
+            <h1 className="text-white text-5xl font-black ">Frequently Asked Questions</h1>
+            <div className="flex flex-col w-screen justify-center items-center gap-3">
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">What is Netflix?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">How much does Netflix cost?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">Where can I watch?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">How do I cancel?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">What can I watch on Netflix?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+              <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+                  <h1 className="text-[28px] text-white">Is Netflix good for kids?</h1>
+                  <button className="text-7xl text-white">+</button>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-2 mt-5">
+              <p className="text-white text-xl">Ready to watch? Enter your email or mobile number to create or restart your membership.</p>
+              <div className="flex justify-center items-center gap-2">
+                <input type="text" placeholder="Email or Mobile Number" className="py-3 px-5 w-96 placeholder:text-white rounded-md bg-slate-800 text-xl" />
+                <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md">Get Started <FaChevronRight />   </button>
+              </div>
             </div>
           </div>
           <hr className="border-[#232323] border-4" />
