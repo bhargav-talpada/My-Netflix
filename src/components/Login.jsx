@@ -6,7 +6,7 @@ import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfil
 import {auth} from "../utils/firebase"
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../redux/userSlice";
-import { LOGIN_BG, USER_AVATAR } from "../utils/constants";
+import { CHILDREN_IMG_URL, DESKTOP_IMG_URL, DESKTOP_ING_URL, DESKTOP_VIDEO_URL, DOWNLOADING_GIF_URL, LOGIN_BG, MOBILE_IMG_URL, STRANGER_THINGS_POSTER_URL, TV_IMG_URL, TV_VIDEO_URL, USER_AVATAR } from "../utils/constants";
 import lang from "../utils/languageConstants";
 
 const Login = () => {
@@ -76,25 +76,25 @@ const Login = () => {
               <p className="w-[550px] text-white text-2xl font-normal">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
             <div className="flex flex-col justify-center items-center overflow-hidden">
-              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" className="h-[430px]" alt="TV img" />
+              <img src={TV_IMG_URL} className="h-[430px]" alt="TV img" />
               <div className="absolute w-[416px] mb-[15px] mr-[5px] ">
-                <video className="inline-block" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoPlay loop />
+                <video  src={TV_VIDEO_URL} autoPlay loop />
               </div>
             </div>
           </div>
           <hr className="border-[#232323] border-4" />
           <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
             <div className="flex flex-col justify-end items-center overflow-hidden">
-              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" className="h-[450px]" alt="mobile img" />
+              <img src={MOBILE_IMG_URL} className="h-[450px]" alt="mobile img" />
               <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[320px] h-28 bg-black mb-7 p-3">
                 <div className="flex gap-4 items-center">
-                  <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" className="h-[87px]" alt="Stranger Things" />
+                  <img src={STRANGER_THINGS_POSTER_URL} className="h-[87px]" alt="Stranger Things" />
                   <div>
                     <h1 className="text-xl text-white font-medium">Stranger Things</h1>
                     <h1 className="text-[#0071eb] text-xl font-normal">Downloading...</h1>
                   </div>
                 </div>
-                <img className="w-12" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="downloading gif" />
+                <img className="w-12" src={DOWNLOADING_GIF_URL} alt="downloading gif" />
               </div>
             </div>
             <div className="flex flex-col gap-5">
@@ -102,8 +102,31 @@ const Login = () => {
               <p className="w-[560px] text-white text-2xl font-normal">Save your favourites easily and always have something to watch.</p>
             </div>
           </div>
+          <hr className="border-[#232323] border-4" />
+          <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
+            <div className="flex flex-col gap-5">
+              <h1 className="text-white text-5xl font-black">Watch everywhere</h1>
+              <p className="w-[500px] text-white text-2xl font-normal">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div className="flex flex-col justify-center items-center overflow-hidden">
+              <img src={DESKTOP_IMG_URL} className="h-[430px]" alt="Desktop img" />
+              <div className="absolute w-[350px] mb-36 ">
+                <video src={DESKTOP_VIDEO_URL} autoPlay loop />
+              </div>
+            </div>
+          </div>
+          <hr className="border-[#232323] border-4" />
+          <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
+            <div className="flex flex-col justify-end items-center overflow-hidden">
+              <img src={CHILDREN_IMG_URL} className="h-[450px]" alt="cjildren img" />
+            </div>
+            <div className="flex flex-col gap-5">
+              <h1 className="text-white text-5xl font-black w-[480px]">Create profiles for kids</h1>
+              <p className="w-[530px] text-white text-2xl font-normal">Send children on adventures with their favourite characters in a space made just for them—free with your membership. </p>
+            </div>
+          </div>
+          <hr className="border-[#232323] border-4" />
         </div>
-        <hr className="border-[#232323] border-4" />
         <form onSubmit={(e) => e.preventDefault()} className="absolute p-12 sm:w-1/2 md:w-3/12 h-[500px] mt-36 mx-auto text-white bg-black bg-opacity-80 right-0 rounded-lg left-0 flex flex-col justify-center items-center ">
           <h1 className="font-bold text-3xl py-4 mr-auto">{ isSignInForm ? <>{lang[langKey].signIn}</> : <>{lang[langKey].signUp}</> }</h1>
           {!isSignInForm && <input type="text" ref={name} placeholder={lang[langKey].fnmPlaceholder} className="px-3 py-2 m-2 w-full bg-gray-600 " required />}

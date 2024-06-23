@@ -6,6 +6,22 @@ export const USER_AVATAR = "https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hj
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w400";
 
+export const TV_IMG_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png";
+
+export const TV_VIDEO_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v";
+
+export const MOBILE_IMG_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg";  
+
+export const STRANGER_THINGS_POSTER_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png";
+
+export const DOWNLOADING_GIF_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif";
+
+export const DESKTOP_IMG_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png";
+
+export const DESKTOP_VIDEO_URL = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v";
+
+export const CHILDREN_IMG_URL = "https://occ-0-2164-395.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d";
+
 export const API_OPTIONS = {
     method: 'GET',
     headers: {
