@@ -11,7 +11,6 @@ import lang from "../utils/languageConstants";
 import { FaChevronRight } from "react-icons/fa6";
 import Footer from "./Footer";
 
-off off
 const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
