@@ -10,7 +10,7 @@ import { CHILDREN_IMG_URL, DESKTOP_IMG_URL, DESKTOP_VIDEO_URL, DOWNLOADING_GIF_U
 import lang from "../utils/languageConstants";
 import { FaChevronRight } from "react-icons/fa6";
 
-off
+off off
 const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
