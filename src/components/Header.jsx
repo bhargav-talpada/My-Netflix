@@ -49,13 +49,14 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute flex flex-col md:flex-row justify-between items-center w-full px-8 py-2 bg-gradient-to-b from-black z-10  ">
+    <div className="absolute flex md:flex-row justify-center items-center w-full px-8 py-2 bg-gradient-to-b from-black z-10  ">
+      <div className="w-10/12 flex justify-between items-center">
       <img className="w-40 mx-auto md:mx-0" src={NETFLIX_LOGO} alt="Netflix logo"/>
       {!user && 
-        <select className=" w-20 md:w-28 py-2 md:px-5 bg-gray-800 text-white m-2" onChange={handleLanguageChange}>
+        <select className=" w-20 md:w-28 py-2 md:px-5 bg-transparent border border-white rounded-md text-white m-2" onChange={handleLanguageChange}>
           {
             SUPPORTED_LANG.map(lang => 
-              <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+              <option key={lang.identifier} value={lang.identifier} className="text-black">{lang.name}</option>
             )
           }
         </select>
@@ -78,6 +79,7 @@ const Header = () => {
           <button onClick={handleSignOut} className="font-bold text-white ml-3 text-2xl"><LuLogOut /></button>
         </div>
       }
+      </div>
     </div>
   )
 }
