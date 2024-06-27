@@ -1,5 +1,15 @@
+import { useDispatch } from "react-redux";
+import { SUPPORTED_LANG } from "../utils/constants";
+import { changeLanguage } from "../redux/configSlice";
 
 const Footer = () => {
+
+    const dispatch = useDispatch();
+    
+    const handleLanguageChange = (e) => {
+        dispatch(changeLanguage(e.target.value));
+      };
+
   return (
     <div className="bg-black h-[400px] justify-center w-screen flex">
         <div className="w-8/12 flex items-center">
@@ -9,6 +19,13 @@ const Footer = () => {
             <a className="text-white cursor-pointer text-base font-thin underline">Investor Relations</a>
             <a className="text-white cursor-pointer text-base font-thin underline">Privacy</a>
             <a className="text-white cursor-pointer text-base font-thin underline">Speed Test</a>
+            <select className=" w-20 md:w-28 py-2 px-5 bg-transparent border border-white rounded-md text-white" onChange={handleLanguageChange}>
+            {
+                SUPPORTED_LANG.map(lang => 
+                <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+                )
+            }
+            </select>
             <a className="text-white text-lg font-normal">Netflix India</a>
         </div>
         <div className="flex flex-col w-72 gap-3">
