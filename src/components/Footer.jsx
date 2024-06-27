@@ -22,7 +22,7 @@ const Footer = () => {
             <select className=" w-20 md:w-28 py-2 px-5 bg-transparent border border-white rounded-md text-white" onChange={handleLanguageChange}>
             {
                 SUPPORTED_LANG.map(lang => 
-                <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+                <option className="text-black" key={lang.identifier} value={lang.identifier}>{lang.name}</option>
                 )
             }
             </select>

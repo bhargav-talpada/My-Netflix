@@ -101,8 +101,8 @@ const Login = () => {
         <hr className="border-[#232323] border-4" />
         <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
           <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black">Enjoy on your TV</h1>
-            <p className="w-[550px] text-white text-2xl font-normal">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            <h1 className="text-white text-5xl font-black">{lang[langKey].enjoyOnTV}</h1>
+            <p className="w-[550px] text-white text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
             <img src={TV_IMG_URL} className="h-[430px]" alt="TV img" />
@@ -120,22 +120,22 @@ const Login = () => {
                 <img src={STRANGER_THINGS_POSTER_URL} className="h-[87px]" alt="Stranger Things" />
                 <div>
                   <h1 className="text-xl text-white font-medium">Stranger Things</h1>
-                  <h1 className="text-[#0071eb] text-xl font-normal">Downloading...</h1>
+                  <h1 className="text-[#0071eb] text-xl font-normal">{lang[langKey].downloadOn}</h1>
                 </div>
               </div>
               <img className="w-12" src={DOWNLOADING_GIF_URL} alt="downloading gif" />
             </div>
            </div>
           <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black w-[480px]">Download your shows to watch offline</h1>
-            <p className="w-[560px] text-white text-2xl font-normal">Save your favourites easily and always have something to watch.</p>
+            <h1 className="text-white text-5xl font-black w-[480px]">{lang[langKey].download}</h1>
+            <p className="w-[560px] text-white text-2xl font-normal">{lang[langKey].downloadDetail}</p>
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
         <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
           <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black">Watch everywhere</h1>
-            <p className="w-[500px] text-white text-2xl font-normal">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            <h1 className="text-white text-5xl font-black">{lang[langKey].watchEverywhere}</h1>
+            <p className="w-[500px] text-white text-2xl font-normal">{lang[langKey].watchDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
             <img src={DESKTOP_IMG_URL} className="h-[430px]" alt="Desktop img" />
@@ -150,8 +150,8 @@ const Login = () => {
             <img src={CHILDREN_IMG_URL} className="h-[450px]" alt="cjildren img" />
           </div>
           <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black w-[480px]">Create profiles for kids</h1>
-            <p className="w-[530px] text-white text-2xl font-normal">Send children on adventures with their favourite characters in a space made just for them—free with your membership. </p>
+            <h1 className="text-white text-5xl font-black w-[480px]">{lang[langKey].child}</h1>
+            <p className="w-[530px] text-white text-2xl font-normal">{lang[langKey].childDetail}</p>
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
