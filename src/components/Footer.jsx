@@ -1,10 +1,13 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { SUPPORTED_LANG } from "../utils/constants";
 import { changeLanguage } from "../redux/configSlice";
+import lang from "../utils/languageConstants";
 
 const Footer = () => {
 
     const dispatch = useDispatch();
+
+    const langKey = useSelector(store => store.config.lang);
     
     const handleLanguageChange = (e) => {
         dispatch(changeLanguage(e.target.value));
@@ -16,9 +19,9 @@ const Footer = () => {
         <div className="flex flex-col w-72 gap-3">
             <a className="text-white text-base font-thin">Questions? call <span className="underline"> 000-800-919-1694 </span> </a>
             <a className="text-white cursor-pointer text-base font-thin underline">FAQ</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Investor Relations</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Privacy</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Speed Test</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].IR}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].Privacy}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].STest}</a>
             <select className=" w-20 md:w-28 py-2 px-5 bg-transparent border border-white rounded-md text-white" onChange={handleLanguageChange}>
             {
                 SUPPORTED_LANG.map(lang => 
@@ -26,24 +29,24 @@ const Footer = () => {
                 )
             }
             </select>
-            <a className="text-white text-lg font-normal">Netflix India</a>
+            <a className="text-white text-lg font-normal">{lang[langKey].NI}</a>
         </div>
         <div className="flex flex-col w-72 gap-3">
-            <a className="text-white cursor-pointer text-base font-thin underline">Help Center</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Jobs</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Cookies Prefrence</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Legal Noties</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].HC}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].jobs}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].cookie}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].LNotice}</a>
         </div>
         <div className="flex flex-col w-64 gap-3">
-            <a className="text-white cursor-pointer text-base font-thin underline">Account</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Ways to Watch</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Corporate Information</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Only on Netflix</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].Account}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].WTW}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].CI}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].OoN}</a>
         </div>
         <div className="flex flex-col gap-3 ">
-            <a className="text-white cursor-pointer text-base font-thin underline">Media Center</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Terma of Use</a>
-            <a className="text-white cursor-pointer text-base font-thin underline">Contact Us</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].MC}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].ToU}</a>
+            <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].CU}</a>
      underline    </div>
         </div>
     </div>

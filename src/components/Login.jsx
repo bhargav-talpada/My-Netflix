@@ -156,89 +156,89 @@ const Login = () => {
         </div>
         <hr className="border-[#232323] border-4" />
         <div className=" w-screen h-auto bg-black flex py-16 flex-col justify-center items-center gap-7">
-          <h1 className="text-white text-5xl font-black">Frequently Asked Questions</h1>
+          <h1 className="text-white text-5xl font-black">{lang[langKey].question}</h1>
           <div className="flex flex-col w-screen justify-center items-center gap-3">
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer1}>
-                <h1 className="text-[28px] text-white">What is Netflix?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q1}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser &&
-                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices</p>
-                  <p className="text-[28px] text-white">You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1 gap-6">
+                  <p className="text-[28px] text-white">{lang[langKey].q1Answer1}</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q1Answer2}</p>
                 </div>
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer2}>
-                <h1 className="text-[28px] text-white">How much does Netflix cost?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q2}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser2 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser2 &&
                 <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q2Answer1}</p>
                 </div>
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer3}>
-                <h1 className="text-[28px] text-white">Where can I watch?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q3}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser3 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser3 &&
-                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
-                  <p className="text-[28px] text-white">You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1 gap-6">
+                  <p className="text-[28px] text-white">{lang[langKey].q3Answer1}</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q3Answer2}</p>
                 </div>
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer4}>
-                <h1 className="text-[28px] text-white">How do I cancel?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q4}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser4 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser4 &&
                 <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q4Answer1}</p>
                 </div>
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer5}>
-                <h1 className="text-[28px] text-white">What can I watch on Netflix?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q5}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser5 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser5 &&
                 <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q5Answer1}</p>
                 </div>
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
               <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer6}>
-                <h1 className="text-[28px] text-white">Is Netflix good for kids?</h1>
+                <h1 className="text-[28px] text-white">{lang[langKey].q6}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser6 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
               {
                 showAnwser6 &&
-                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
-                  <p className="text-[28px] text-white">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
-                  <p className="text-[28px] text-white">Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1 gap-6">
+                  <p className="text-[28px] text-white">{lang[langKey].q6Answer1}</p>
+                  <p className="text-[28px] text-white">{lang[langKey].q6Answer2}</p>
                 </div>
               }
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 mt-5">
-            <p className="text-white text-xl">Ready to watch? Enter your email or mobile number to create or restart your membership.</p>
+            <p className="text-white text-2xl">{lang[langKey].membership}</p>
             <div className="flex justify-center items-center gap-2">
-              <input type="text" placeholder="Email or Mobile Number" className="py-3 px-5 w-96 placeholder:text-white rounded-md bg-slate-800 text-xl" />
-              <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md">Get Started <FaChevronRight />   </button>
+              <input type="text" placeholder={lang[langKey].email} className="py-3 px-5 w-96 placeholder:text-white rounded-md bg-slate-800 text-xl" />
+              <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md">{lang[langKey].getStart} <FaChevronRight />   </button>
             </div>
           </div>
         </div>
