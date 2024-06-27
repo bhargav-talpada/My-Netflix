@@ -10,11 +10,14 @@ import { CHILDREN_IMG_URL, DESKTOP_IMG_URL, DESKTOP_VIDEO_URL, DOWNLOADING_GIF_U
 import lang from "../utils/languageConstants";
 import { FaChevronRight } from "react-icons/fa6";
 import Footer from "./Footer";
+import { BsPlusLg } from "react-icons/bs";
+import { RxCross1 } from "react-icons/rx";
 
 const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [showAnwser, setShowAnwser] = useState(false);
 
   const langKey = useSelector(store => store.config.lang);
 
@@ -23,10 +26,14 @@ const Login = () => {
   const password = useRef(null);
   const dispatch = useDispatch();
 
+  const handleShowAnswer = () => {
+    setShowAnwser(!showAnwser);
+  };
+
   const toggleSignUpForm = () => {
     setIsSignInForm(!isSignInForm);
   };
-
+  
   const handleButtonClick = () => {
     const message =  checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
@@ -128,14 +135,23 @@ const Login = () => {
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-[1000px] bg-black flex flex-col justify-center items-center gap-7">
+        <div className=" w-screen h-auto bg-black flex flex-col justify-center items-center gap-7">
           <h1 className="text-white text-5xl font-black ">Frequently Asked Questions</h1>
           <div className="flex flex-col w-screen justify-center items-center gap-3">
-            <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
-              <h1 className="text-[28px] text-white">What is Netflix?</h1>
-              <button className="text-7xl text-white">+</button>
+            <div className="w-9/12 flex flex-col items-center cursor-pointer">
+              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer}>
+                <h1 className="text-[28px] text-white">What is Netflix?</h1>
+                <button className="text-5xl text-white flex items-centerx transition ease-in-out delay-">{!showAnwser ? <BsPlusLg /> : <RxCross1 />}</button>
+              </div>
+              {
+                showAnwser &&
+                <div className="w-full h-auto p-5 flex flex-col items-center bg-[#363636] mt-1">
+                  <p className="text-[28px] text-white">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices</p>
+                  <p className="text-[28px] text-white">You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                </div>
+              }
             </div>
-            <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
+            {/* <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
               <h1 className="text-[28px] text-white">How much does Netflix cost?</h1>
               <button className="text-7xl text-white">+</button>
             </div>
@@ -154,7 +170,7 @@ const Login = () => {
             <div className="w-9/12 h-24 bg-[#232323] p-5 flex justify-between items-center cursor-pointer">
               <h1 className="text-[28px] text-white">Is Netflix good for kids?</h1>
               <button className="text-7xl text-white">+</button>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col justify-center items-center gap-2 mt-5">
             <p className="text-white text-xl">Ready to watch? Enter your email or mobile number to create or restart your membership.</p>
