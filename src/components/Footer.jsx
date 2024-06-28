@@ -47,7 +47,7 @@ const Footer = () => {
             <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].MC}</a>
             <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].ToU}</a>
             <a className="text-white cursor-pointer text-base font-thin underline">{lang[langKey].CU}</a>
-     underline    </div>
+        </div>
         </div>
     </div>
   )

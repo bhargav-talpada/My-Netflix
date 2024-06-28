@@ -97,12 +97,12 @@ const Login = () => {
     <div className="flex flex-col overflow-x-hidden">
       <Header />
       <div className="">
-        <img src={LOGIN_BG} className="h-screen md:h-full bg-cover w-screen" alt="Netflix BG" />
+        <img src={LOGIN_BG} className="h-[700px] bg-cover w-screen" alt="Netflix BG" />
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
-          <div className="flex flex-col gap-5">
+        <div className="md:flex w-screen h-[590px] bg-black justify-center items-center">
+          <div className="w-screen flex flex-col justify-center items-center md:items-start gap-5">
             <h1 className="text-white text-5xl font-black">{lang[langKey].enjoyOnTV}</h1>
-            <p className="w-[550px] text-white text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
+            <p className="w-auto md:w-[550px] text-white text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
             <img src={TV_IMG_URL} className="h-[430px]" alt="TV img" />
@@ -112,7 +112,7 @@ const Login = () => {
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
+        <div className=" w-screen h-auto md:h-[590px] bg-black md:flex justify-center items-center py-5">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={MOBILE_IMG_URL} className="h-[450px]" alt="mobile img" />
             <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[320px] h-28 bg-black mb-7 p-3">
@@ -126,9 +126,9 @@ const Login = () => {
               <img className="w-12" src={DOWNLOADING_GIF_URL} alt="downloading gif" />
             </div>
            </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col justify-center items-center md:items-start gap-5">
             <h1 className="text-white text-5xl font-black w-[480px]">{lang[langKey].download}</h1>
-            <p className="w-[560px] text-white text-2xl font-normal">{lang[langKey].downloadDetail}</p>
+            <p className="w-auto md:w-[560px] text-white text-2xl font-normal">{lang[langKey].downloadDetail}</p>
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
@@ -237,7 +237,7 @@ const Login = () => {
           <div className="flex flex-col justify-center items-center gap-2 mt-5">
             <p className="text-white text-2xl">{lang[langKey].membership}</p>
             <div className="flex justify-center items-center gap-2">
-              <input type="text" placeholder={lang[langKey].email} className="py-3 px-5 w-96 placeholder:text-white rounded-md bg-slate-800 text-xl" />
+              <input type="text" placeholder={lang[langKey].email} className="py-3 px-5 w-96 placeholder:text-white text-white rounded-md bg-slate-800 text-xl" />
               <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md">{lang[langKey].getStart} <FaChevronRight />   </button>
             </div>
           </div>
