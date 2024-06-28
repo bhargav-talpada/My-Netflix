@@ -105,17 +105,17 @@ const Login = () => {
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
-            <img src={TV_IMG_URL} className="h-[430px]" alt="TV img" />
-            <div className="absolute w-[416px] mb-[15px] mr-[5px] ">
+            <img src={TV_IMG_URL} className="h-[290px] sm:h-[390px] md:h-[430px]" alt="TV img" />
+            <div className="absolute w-[250px] sm:w-[320px] md:w-[416px] mb-[15px] mr-[5px] ">
               <video src={TV_VIDEO_URL} autoPlay loop />
             </div>
-           </div>
+          </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10 px-5">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={MOBILE_IMG_URL} className="h-[450px]" alt="mobile img" />
-            <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[450px] lg:w-[320px] h-24 lg:h-28 bg-black mb-7 p-3">
+            <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[300px] md:w-[450px] lg:w-[320px] h-24 lg:h-28 bg-black mb-7 p-3">
               <div className="flex gap-4 items-center">
                 <img src={STRANGER_THINGS_POSTER_URL} className="h-20 lg:h-[87px]" alt="Stranger Things" />
                 <div>
@@ -138,8 +138,8 @@ const Login = () => {
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].watchDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
-            <img src={DESKTOP_IMG_URL} className="h-[430px]" alt="Desktop img" />
-            <div className="absolute w-[350px] mb-36 ">
+            <img src={DESKTOP_IMG_URL} className="h-[350px] sm:h-[390px] md:h-[430px]" alt="Desktop img" />
+            <div className="absolute w-[270px] sm:w-[300px] md:w-[350px] mb-36 ">
               <video src={DESKTOP_VIDEO_URL} autoPlay loop />
             </div>
            </div>
