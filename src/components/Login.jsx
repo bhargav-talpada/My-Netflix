@@ -99,25 +99,25 @@ const Login = () => {
       <div className="">
         <img src={LOGIN_BG} className="h-[700px] bg-cover w-screen" alt="Netflix BG" />
         <hr className="border-[#232323] border-4" />
-        <div className="md:flex w-screen h-[590px] bg-black justify-center items-center">
-          <div className="w-screen flex flex-col justify-center items-center md:items-start gap-5">
-            <h1 className="text-white text-5xl font-black">{lang[langKey].enjoyOnTV}</h1>
-            <p className="w-auto md:w-[550px] text-white text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
+        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
+          <div className="flex flex-col items-center lg:items-start gap-5">
+            <h1 className="text-white text-4xl lg:text-5xl font-black">{lang[langKey].enjoyOnTV}</h1>
+            <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
             <img src={TV_IMG_URL} className="h-[430px]" alt="TV img" />
             <div className="absolute w-[416px] mb-[15px] mr-[5px] ">
-              <video  src={TV_VIDEO_URL} autoPlay loop />
+              <video src={TV_VIDEO_URL} autoPlay loop />
             </div>
-          </div>
+           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto md:h-[590px] bg-black md:flex justify-center items-center py-5">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={MOBILE_IMG_URL} className="h-[450px]" alt="mobile img" />
-            <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[320px] h-28 bg-black mb-7 p-3">
+            <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[450px] lg:w-[320px] h-24 lg:h-28 bg-black mb-7 p-3">
               <div className="flex gap-4 items-center">
-                <img src={STRANGER_THINGS_POSTER_URL} className="h-[87px]" alt="Stranger Things" />
+                <img src={STRANGER_THINGS_POSTER_URL} className="h-20 lg:h-[87px]" alt="Stranger Things" />
                 <div>
                   <h1 className="text-xl text-white font-medium">Stranger Things</h1>
                   <h1 className="text-[#0071eb] text-xl font-normal">{lang[langKey].downloadOn}</h1>
@@ -126,16 +126,16 @@ const Login = () => {
               <img className="w-12" src={DOWNLOADING_GIF_URL} alt="downloading gif" />
             </div>
            </div>
-          <div className="flex flex-col justify-center items-center md:items-start gap-5">
-            <h1 className="text-white text-5xl font-black w-[480px]">{lang[langKey].download}</h1>
-            <p className="w-auto md:w-[560px] text-white text-2xl font-normal">{lang[langKey].downloadDetail}</p>
+          <div className="flex flex-col items-center lg:items-start gap-5 mt-10">
+            <h1 className="text-white text-4xl lg:text-5xl font-black w-auto lg:w-[480px]">{lang[langKey].download}</h1>
+            <p className="w-auto lg:w-[560px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].downloadDetail}</p>
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
-          <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black">{lang[langKey].watchEverywhere}</h1>
-            <p className="w-[500px] text-white text-2xl font-normal">{lang[langKey].watchDetail}</p>
+        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center">
+          <div className="flex flex-col items-center lg:items-start gap-5 py-10">
+            <h1 className="text-white text-4xl lg:text-5xl font-black">{lang[langKey].watchEverywhere}</h1>
+            <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].watchDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
             <img src={DESKTOP_IMG_URL} className="h-[430px]" alt="Desktop img" />
@@ -145,13 +145,13 @@ const Login = () => {
            </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-[590px] bg-black flex justify-center items-center">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={CHILDREN_IMG_URL} className="h-[450px]" alt="cjildren img" />
           </div>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-white text-5xl font-black w-[480px]">{lang[langKey].child}</h1>
-            <p className="w-[530px] text-white text-2xl font-normal">{lang[langKey].childDetail}</p>
+          <div className="flex flex-col items-center lg:items-start gap-5">
+            <h1 className="text-white text-4xl lg:text-5xl font-black w-auto lg:w-[480px]">{lang[langKey].child}</h1>
+            <p className="w-auto lg:w-[530px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].childDetail}</p>
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
@@ -159,7 +159,7 @@ const Login = () => {
           <h1 className="text-white text-5xl font-black">{lang[langKey].question}</h1>
           <div className="flex flex-col w-screen justify-center items-center gap-3">
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer1}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer1}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q1}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -172,7 +172,7 @@ const Login = () => {
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer2}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer2}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q2}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser2 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -184,7 +184,7 @@ const Login = () => {
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer3}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer3}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q3}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser3 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -197,7 +197,7 @@ const Login = () => {
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer4}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer4}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q4}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser4 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -209,7 +209,7 @@ const Login = () => {
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer5}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer5}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q5}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser5 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -221,7 +221,7 @@ const Login = () => {
               }
             </div>
             <div className="w-9/12 flex flex-col items-center cursor-pointer">
-              <div className="w-full h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer6}>
+              <div className="w-full h-auto lg:h-24 p-5 bg-[#232323] flex justify-between items-center" onClick={handleShowAnswer6}>
                 <h1 className="text-[28px] text-white">{lang[langKey].q6}</h1>
                 <button className="text-5xl text-white flex items-center">{!showAnwser6 ? <BsPlusLg /> : <RxCross1 />}</button>
               </div>
@@ -234,11 +234,11 @@ const Login = () => {
               }
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-2 mt-5">
-            <p className="text-white text-2xl">{lang[langKey].membership}</p>
-            <div className="flex justify-center items-center gap-2">
-              <input type="text" placeholder={lang[langKey].email} className="py-3 px-5 w-96 placeholder:text-white text-white rounded-md bg-slate-800 text-xl" />
-              <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md">{lang[langKey].getStart} <FaChevronRight />   </button>
+          <div className="flex flex-col justify-center items-center gap-2 px-5 mt-5">
+            <p className="text-white text-center text-2xl">{lang[langKey].membership}</p>
+            <div className="md:flex justify-center items-center gap-3 w-screen px-5">
+              <input type="text" placeholder={lang[langKey].email} className="py-3 px-5 w-full md:w-96 placeholder:text-white text-white rounded-md bg-slate-800 text-xl" />
+              <button className="flex items-center justify-center text-2xl text-white bg-red-600 p-2 w-52 rounded-md mt-3">{lang[langKey].getStart} <FaChevronRight />   </button>
             </div>
           </div>
         </div>
