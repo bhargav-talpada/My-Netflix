@@ -16,7 +16,7 @@ const usePopularMovies = () => {
 
     useEffect(() => {
        !popularMovies && getPopularMovies();
-    },[popularMovies]);
+    },[popularMovies, getPopularMovies]);
 
 };
 
