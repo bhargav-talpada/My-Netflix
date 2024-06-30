@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addUser, removeUser } from "../redux/userSlice";
 import { NETFLIX_LOGO, SUPPORTED_LANG } from "../utils/constants";
-import { toggleGPTSearchView } from "../redux/gptSlice";
+// import { toggleGPTSearchView } from "../redux/gptSlice";
 import { changeLanguage } from "../redux/configSlice";
 import { LuLogOut } from "react-icons/lu";
 
@@ -40,9 +40,9 @@ const Header = () => {
 
   },[]);
 
-  const handleGPTSearchClick = () => {
-    dispatch(toggleGPTSearchView());
-  };
+  // const handleGPTSearchClick = () => {
+  //   dispatch(toggleGPTSearchView());
+  // };
 
   const handleLanguageChange = (e) => {
     dispatch(changeLanguage(e.target.value));
