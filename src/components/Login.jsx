@@ -99,7 +99,7 @@ const Login = () => {
       <div className="">
         <img src={LOGIN_BG} className="h-[700px] bg-cover w-screen" alt="Netflix BG" />
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black flex flex-col lg:flex lg:flex-row justify-center items-center py-10">
           <div className="flex flex-col items-center lg:items-start gap-5">
             <h1 className="text-white text-4xl lg:text-5xl font-black">{lang[langKey].enjoyOnTV}</h1>
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
@@ -112,7 +112,7 @@ const Login = () => {
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10 px-5">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black flex flex-col-reverse lg:flex lg:flex-row justify-center items-center py-10 px-5">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={MOBILE_IMG_URL} className="h-[450px]" alt="mobile img" />
             <div className="absolute flex items-center justify-between gap-4 border-2 border-[#686666] rounded-xl w-[300px] md:w-[450px] lg:w-[320px] h-24 lg:h-28 bg-black mb-7 p-3">
@@ -132,7 +132,7 @@ const Login = () => {
           </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black flex flex-col lg:flex lg:flex-row justify-center items-center">
           <div className="flex flex-col items-center lg:items-start gap-5 py-10">
             <h1 className="text-white text-4xl lg:text-5xl font-black">{lang[langKey].watchEverywhere}</h1>
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].watchDetail}</p>
@@ -145,7 +145,7 @@ const Login = () => {
            </div>
         </div>
         <hr className="border-[#232323] border-4" />
-        <div className=" w-screen h-auto lg:h-[590px] bg-black lg:flex justify-center items-center py-10">
+        <div className=" w-screen h-auto lg:h-[590px] bg-black flex flex-col lg:flex lg:flex-row-reverse justify-center items-center py-10">
           <div className="flex flex-col justify-end items-center overflow-hidden">
             <img src={CHILDREN_IMG_URL} className="h-[450px]" alt="cjildren img" />
           </div>
