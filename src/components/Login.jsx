@@ -12,6 +12,8 @@ import { FaChevronRight } from "react-icons/fa6";
 import Footer from "./Footer";
 import { BsPlusLg } from "react-icons/bs";
 import { RxCross1 } from "react-icons/rx";
+import { VscEye } from "react-icons/vsc";
+import { VscEyeClosed } from "react-icons/vsc";
 
 const Login = () => {
 
