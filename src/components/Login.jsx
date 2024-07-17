@@ -256,7 +256,7 @@ const Login = () => {
         {!isSignInForm && <input type="text" ref={name} placeholder={lang[langKey].fnmPlaceholder} className="px-3 py-2 m-2 w-full bg-gray-600 " required />}
         <input type="text" ref={email} placeholder={lang[langKey].emailPlaceholder} className="px-3 py-2 my-3 w-full bg-gray-600 " required />
         <input type={!showPassword ? "password" : "text"} ref={password} placeholder={lang[langKey].passwordPlaceholder} className="px-3 py-2 my-3 w-full bg-gray-600 " required />
-        <div> {!showPassword ? <VscEye className={"absolute right-16 top-[220px] text-xl cursor-pointer"} onClick={handleShowPassword} /> : <VscEyeClosed className="absolute right-16 top-[220px] text-xl cursor-pointer" onClick={handleShowPassword} /> } </div>
+        <div> {!showPassword ? <VscEye className={isSignInForm ? "absolute right-16 top-[220px] text-xl cursor-pointer" : "absolute right-16 top-[250px] text-xl cursor-pointer" } onClick={handleShowPassword} /> : <VscEyeClosed className={isSignInForm ? "absolute right-16 top-[220px] text-xl cursor-pointer" : "absolute right-16 top-[250px] text-xl cursor-pointer" } onClick={handleShowPassword} /> } </div>
         <p className="text-red-500 font-bold text-lg p-2">{errorMessage}</p>
         <button className="p-3 my-6 bg-red-600 rounded-lg w-full" onClick={handleButtonClick}>{isSignInForm ? <>{lang[langKey].signIn}</> : <>{lang[langKey].signUp}</> }</button>
         <p className="p-4 mr-auto text-lg text-gray-400" >{isSignInForm ? <>{lang[langKey].newToNetflix}</> : <>{lang[langKey].alreadyRegister}</> } <span onClick={toggleSignUpForm} className="text-white cursor-pointer hover:underline font-bold"> { isSignInForm ? <>{lang[langKey].signUpNow}</> : <>{lang[langKey].signInNow}</> }</span></p>
