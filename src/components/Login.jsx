@@ -25,6 +25,7 @@ const Login = () => {
   const [showAnwser4, setShowAnwser4] = useState(false);
   const [showAnwser5, setShowAnwser5] = useState(false);
   const [showAnwser6, setShowAnwser6] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const langKey = useSelector(store => store.config.lang);
 
@@ -94,6 +95,10 @@ const Login = () => {
       );
     }
   };
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  }
 
   return (
     <div className="flex flex-col overflow-x-hidden">
@@ -250,7 +255,8 @@ const Login = () => {
         <h1 className="font-bold text-3xl py-4 mr-auto">{ isSignInForm ? <>{lang[langKey].signIn}</> : <>{lang[langKey].signUp}</> }</h1>
         {!isSignInForm && <input type="text" ref={name} placeholder={lang[langKey].fnmPlaceholder} className="px-3 py-2 m-2 w-full bg-gray-600 " required />}
         <input type="text" ref={email} placeholder={lang[langKey].emailPlaceholder} className="px-3 py-2 my-3 w-full bg-gray-600 " required />
-        <input type="password" ref={password} placeholder={lang[langKey].passwordPlaceholder} className="px-3 py-2 my-3 w-full bg-gray-600 " required />
+        <input type={!showPassword ? "password" : "text"} ref={password} placeholder={lang[langKey].passwordPlaceholder} className="px-3 py-2 my-3 w-full bg-gray-600 " required />
+        <div> {!showPassword ? <VscEye className={"absolute right-16 top-[220px] text-xl cursor-pointer"} onClick={handleShowPassword} /> : <VscEyeClosed className="absolute right-16 top-[220px] text-xl cursor-pointer" onClick={handleShowPassword} /> } </div>
         <p className="text-red-500 font-bold text-lg p-2">{errorMessage}</p>
         <button className="p-3 my-6 bg-red-600 rounded-lg w-full" onClick={handleButtonClick}>{isSignInForm ? <>{lang[langKey].signIn}</> : <>{lang[langKey].signUp}</> }</button>
         <p className="p-4 mr-auto text-lg text-gray-400" >{isSignInForm ? <>{lang[langKey].newToNetflix}</> : <>{lang[langKey].alreadyRegister}</> } <span onClick={toggleSignUpForm} className="text-white cursor-pointer hover:underline font-bold"> { isSignInForm ? <>{lang[langKey].signUpNow}</> : <>{lang[langKey].signInNow}</> }</span></p>
