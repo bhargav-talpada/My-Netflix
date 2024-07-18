@@ -104,7 +104,7 @@ const Login = () => {
     <div className="flex flex-col overflow-x-hidden">
       <Header />
       <div className="">
-        <img src={LOGIN_BG} className="h-[700px] bg-cover w-screen" alt="Netflix BG" />
+        <img src={LOGIN_BG} className="h-[700px] w-screen bg-contain" alt="Netflix BG" />
         <hr className="border-[#232323] border-4" />
         <div className=" w-screen h-auto lg:h-[590px] bg-black flex flex-col lg:flex lg:flex-row justify-center items-center py-10">
           <div className="flex flex-col items-center lg:items-start gap-5 px-10 lg:px-0">
