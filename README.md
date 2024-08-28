@@ -1,6 +1,6 @@
-# Netflix-GPT 🎦🎬
+# My-Netflix 🎦🎬
 
-- This NetflixGPT project is a final project of Namaste React Series and this project made using react.
+- This My-Netflix project is a final project of Namaste React Series and this project made using react.
 
 # Features ⭐
 - Login/SignUp page
@@ -16,9 +16,6 @@
             - Top Rated Movies
             - Popular Movies
             - Upcoming Movies
-- NetflixGPT
-    - GPT Search Bar
-    - Movie Suggetions
 
 # Work 🧑‍💻💻
 - Create React App
