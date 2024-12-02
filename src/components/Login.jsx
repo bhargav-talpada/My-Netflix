@@ -112,8 +112,8 @@ const Login = () => {
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].enjoyOnTVDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
-            <img src={TV_IMG_URL} className="h-[290px] sm:h-[390px] md:h-[430px]" alt="TV img" />
-            <div className="absolute w-[250px] sm:w-[320px] md:w-[416px] mb-[15px] mr-[5px] ">
+            <img src={TV_IMG_URL} className="h-[290px] sm:h-[390px] md:h-[430px] z-50" alt="TV img" />
+            <div className="absolute w-[250px] sm:w-[320px] md:w-[416px] mb-[15px] mr-[5px]">
               <video src={TV_VIDEO_URL} autoPlay loop />
             </div>
           </div>
@@ -145,7 +145,7 @@ const Login = () => {
             <p className="w-auto lg:w-[500px] text-white text-xl lg:text-2xl font-normal">{lang[langKey].watchDetail}</p>
           </div>
           <div className="flex flex-col justify-center items-center overflow-hidden">
-            <img src={DESKTOP_IMG_URL} className="h-[350px] sm:h-[390px] md:h-[430px]" alt="Desktop img" />
+            <img src={DESKTOP_IMG_URL} className="h-[350px] sm:h-[390px] md:h-[430px] z-50" alt="Desktop img" />
             <div className="absolute w-[270px] sm:w-[300px] md:w-[350px] mb-36 ">
               <video src={DESKTOP_VIDEO_URL} autoPlay loop />
             </div>
